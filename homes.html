@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Homes - The Evergreens</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-body">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Video background -->
+    <video id="hero-video" autoplay loop muted playsinline preload="auto">
+        <source src="images/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html"><img src="images/logo-white.svg" alt="The Evergreens Logo" class="logo"></a>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="homes.html" class="nav-link active">The Homes</a>
+                <a href="amenities.html" class="nav-link">Lifestyle</a>
+                <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="page-panel">
+            <section class="page-hero">
+                <h1>Our Home Collections</h1>
+                <p>Thoughtfully designed for modern families, our homes blend timeless architecture with energy-efficient, high-quality construction.</p>
+            </section>
+    
+            <section class="collection-explainer">
+                <h2>Collection 1: The Estate Series</h2>
+                <p>Featuring our largest floor plans on premium 80' and 90' homesites, The Estate Series offers expansive living for families who value space and elegance. (3,200 – 4,200 sq. ft.)</p>
+            </section>
+    
+            <section class="home-collection">
+                <div class="home-card">
+                    <h3>The Cedar</h3>
+                    <div class="home-stats">2,556 sq. ft. | 4 Bed | 2 Bath</div>
+                    <img src="images/home-cedar-exterior.jpg" alt="The Cedar" class="home-card-img">
+                    <p>An inviting and functional plan perfect for comfortable family living.</p>
+                    <button class="btn btn-primary open-interest-modal">Request Info</button>
+                </div>
+                <div class="home-card">
+                     <h3>The Willow</h3>
+                    <div class="home-stats">3,481 sq. ft. | 5 Bed | 4.5 Bath</div>
+                    <img src="images/home-willow-rendering.jpg" alt="The Willow" class="home-card-img">
+                    <p>Luxurious and spacious, with ample room for entertainment and privacy.</p>
+                    <button class="btn btn-primary open-interest-modal">Request Info</button>
+                </div>
+                <div class="home-card">
+                    <h3>The Aspen</h3>
+                    <div class="home-stats">2,639 sq. ft. | 5 Bed | 3 Bath</div>
+                    <img src="images/home-aspen-interior.jpg" alt="The Aspen" class="home-card-img">
+                    <p>A versatile two-story design that adapts to your family's needs.</p>
+                    <button class="btn btn-primary open-interest-modal">Request Info</button>
+                </div>
+            </section>
+
+             <section class="collection-explainer">
+                <h2>Collection 2: The Heritage Series</h2>
+                <p>Our Heritage Series offers flexible, efficient designs on beautiful 70' homesites without compromising on quality or style. (2,500 – 2,900 sq. ft.)</p>
+            </section>
+
+             <section class="home-collection">
+                <div class="home-card">
+                    <h3>The Oakwood</h3>
+                    <div class="home-stats">2,511 sq. ft. | 5 Bed | 3 Bath</div>
+                    <img src="images/home-oakwood-exterior.jpg" alt="The Oakwood" class="home-card-img">
+                    <p>Classic charm meets modern open-concept living in this family favorite.</p>
+                    <button class="btn btn-primary open-interest-modal">Request Info</button>
+                </div>
+                <div class="home-card">
+                     <h3>The Magnolia</h3>
+                    <div class="home-stats">2,709 sq. ft. | 4 Bed | 3 Bath</div>
+                    <img src="images/home-magnolia-rendering.jpg" alt="The Magnolia" class="home-card-img">
+                    <p>An elegant and thoughtful layout designed for comfort and style.</p>
+                    <button class="btn btn-primary open-interest-modal">Request Info</button>
+                </div>
+                <div class="home-card">
+                    <h3>The Pine</h3>
+                    <div class="home-stats">3,034 sq. ft. | 5 Bed | 3 Bath</div>
+                    <img src="images/home-pine-interior.jpg" alt="The Pine" class="home-card-img">
+                    <p>Generous space and smart design create the perfect family retreat.</p>
+                    <button class="btn btn-primary open-interest-modal">Request Info</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="modal-overlay" id="interest-list-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-button">&times;</button>
+            <h2>Your New Home Awaits</h2>
+            <p>We're excited you're interested in learning more! Join our VIP Interest List to receive floor plans, pricing, and an exclusive invitation to our opening events.</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Join the Interest List</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

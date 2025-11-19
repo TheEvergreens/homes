@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Visit - The Evergreens</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-body">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Video background -->
+    <video id="hero-video" autoplay loop muted playsinline preload="auto">
+        <source src="images/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html"><img src="images/logo-white.svg" alt="The Evergreens Logo" class="logo"></a>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="homes.html" class="nav-link">The Homes</a>
+                <a href="amenities.html" class="nav-link">Lifestyle</a>
+                <a href="contact.html" class="btn btn-primary active">Schedule a Tour</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="page-panel">
+            <div class="form-page-grid">
+                <div class="form-info">
+                    <img src="images/sales-manager-photo.jpg" alt="Sales Manager" class="form-founder-photo">
+                    <h2>We'd Love to Meet You.</h2>
+                    <p>Schedule a private tour to walk our beautiful homesites and learn more about life at The Evergreens. Fill out the form or call us directly.</p>
+                    <ul>
+                        <li>Receive detailed floor plan and pricing information.</li>
+                        <li>Get exclusive updates on homesite availability.</li>
+                        <li>Experience the natural beauty of the community firsthand.</li>
+                    </ul>
+                </div>
+                <div class="form-box">
+                    <h3>Schedule a Tour or Request Info</h3>
+                    
+                    <!-- IMPORTANT: CREATE a new Google Form and replace the ACTION URL and NAME attributes below -->
+                    <form id="contact-form" action="YOUR_NEW_GOOGLE_FORM_RESPONSE_URL" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="entry.12345678" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="entry.23456789" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                             <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="entry.34567890">
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">I'm interested in...</label>
+                                <input type="text" id="interest" name="entry.45678901" placeholder="e.g., The Willow Plan, a 90' Lot">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="questions">Questions or Comments</label>
+                            <textarea id="questions" name="entry.56789012" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                        <p class="privacy-note">We respect your privacy and will not share your information.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
